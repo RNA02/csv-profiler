@@ -33,8 +33,10 @@ Internet connection (for uvx)
 
 ### Option 1: Run Using CLI (Recommended)
 This option runs the profiler directly from GitHub without manual setup.
+
 1️⃣ Run the profiler
 uvx git+https://github.com/RNA02/csv-profiler profile data/sample.csv --out-dir outputs --format both
+
 2️⃣ Output
 After running the command, two files will be created:
 outputs/
