@@ -17,4 +17,4 @@ It allows running a CSV profiler directly from GitHub using `uvx`.
 ## How to run (CLI)
 
 ```bash
-uvx git+https://github.com/RNA02/csv-profiler data/sample.csv --out-dir outputs --format both
+uvx git+https://github.com/RNA02/csv-profiler profile data/sample.csv --out-dir outputs --format both
