@@ -45,17 +45,23 @@ outputs/
 These contain the CSV profiling results.
 
 ### Option 2: Run the Web Application (Streamlit)
+
 This option launches an interactive web interface.
+
 1️⃣ Clone the repository
 git clone https://github.com/RNA02/csv-profiler.git
 cd csv-profiler
+
 2️⃣ Install dependencies
 pip install streamlit pandas
+
 3️⃣ Run the web app
 streamlit run src/csv_profiler/web.py
+
 4️⃣ Open in browser
 If it does not open automatically, go to:
 http://localhost:8501
+
 5️⃣ What you can do in the web app
 Upload any CSV file
 Preview the data
