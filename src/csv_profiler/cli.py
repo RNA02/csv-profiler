@@ -5,14 +5,13 @@ app = typer.Typer()
 
 @app.command()
 def profile(
-    csv_path: str,
-    out_dir: str = "outputs",
-    format: str = "both",
+    csv_path: str = typer.Argument(..., help="Path to CSV file"),
+    out_dir: str = typer.Option("outputs", "--out-dir", help="Output directory"),
+    format: str = typer.Option("both", "--format", help="json|md|both"),
 ):
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
 
-    # Minimal placeholder outputs (enough for the assignment "uvx run")
     if format in ("json", "both"):
         (out / "report.json").write_text('{"status":"ok"}\n', encoding="utf-8")
 
