@@ -1,0 +1,17 @@
+[project]
+name = "csv-profiler"
+version = "0.1.0"
+description = "CSV profiling tool (CLI) for SDAIA T5 bootcamp"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "typer>=0.12.0",
+  "pandas>=2.0.0",
+]
+
+[project.scripts]
+csv-profiler = "csv_profiler.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
