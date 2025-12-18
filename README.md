@@ -8,28 +8,47 @@ The project provides two ways to analyze CSV files:
 ## Project Structure
 
 csv-profiler/
+
 │
+
 ├── data/
+
 │   └── sample.csv
+
 │
+
 ├── outputs/
+
 │   ├── report.json
+
 │   └── report.md
+
 │
+
 ├── src/
+
 │   └── csv_profiler/
+
 │       ├── __init__.py
+
 │       ├── cli.py
+
 │       └── web.py
+
 │
+
 ├── pyproject.toml
+
 ├── README.md
+
 └── .gitignore
 
 ## Requirements
-Python 3.10+
-Git
-Internet connection (for uvx)
+- Python 3.10+
+
+- Git
+
+- Internet connection (for uvx)
 
 ### Option 1: Run Using CLI (Recommended)
 This option runs the profiler directly from GitHub without manual setup.
